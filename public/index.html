@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SAN WEALTH AI</title>
+<meta name="description" content="SAN WEALTH AI – your money, your goals, your financial partner. Works fully offline.">
+<meta name="theme-color" content="#F3FAFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SAN WEALTH">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="app">
+  <aside class="side glass" aria-label="Sidebar">
+    <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M6 19v-5M12 19V9M18 19V4"/></svg></div><div>SAN WEALTH AI<small>OFFLINE EDITION</small></div></div>
+    <nav id="side-nav" aria-label="Main navigation"></nav>
+    <div class="foot">Your money. Your goals.<br>Your AI financial partner.</div>
+  </aside>
+  <main id="main" tabindex="-1">
+    <div id="view"></div>
+  </main>
+</div>
+<nav class="tabs glass" id="tabs" aria-label="Main navigation"></nav>
+<a class="fab" id="fab" href="#/assistant" aria-label="Open assistant"><span class="orb"></span></a>
+<button class="status glass" id="status" data-s="online" aria-live="polite"><i></i><span id="status-t">Online</span></button>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div id="modal-root"></div>
+<div id="rec-root"></div>
+<input type="file" id="file" accept="application/json,.json" hidden>
+
+<script src="app.js"></script>
+</body>
+</html>
